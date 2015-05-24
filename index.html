@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Body Mass Index Calculator</title>
+	<meta name="description" content="Body Mass Index Calculator">
+	<meta name="author" content="John Cartmill">
+	<meta name="generator" content="slidify" />
+	
+	<!-- LOAD STYLE SHEETS -->
+	<link rel="stylesheet" href="libraries/frameworks/html5slides/default/styles.css">
+	<link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />  <link rel="stylesheet" href = "assets/css/ribbons.css">
+  
+</head>
+<body style='display: none'>
+	<section class='slides layout-regular template-regular'>
+     <article class="" id="slide-1" style="background:;">
+  <h3>Body Mass Index Calulator</h3>
+  <h6>John Cartmill</h6>
+
+<h6>Developing Data Products</h6>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>Why a Body Mass Index Calculator ?</h3>
+  <p>Body Mass Index (BMI) is a good proxy for body fat percentage and has come to be widely used for preliminary diagnosis.</p>
+
+<ul>
+<li>More than one-third (34.9% or 78.6 million) of U.S. adults are obese.</li>
+<li>Obesity-related conditions include heart disease, stroke, type 2 diabetes and certain types of cancer, some of the leading causes of preventable death.<br></li>
+<li>Obesity-related conditions include heart disease, stroke, type 2 diabetes and certain types of cancer, some of the leading causes of preventable death.<br></li>
+</ul>
+
+<p>Source US Center for Disease Control <br><a href="http://www.cdc.gov/obesity/data/adult.html">http://www.cdc.gov/obesity/data/adult.html</a></p>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>Simple and Easy to Use</h3>
+  <p>The application only requires the user to move a slider bar for their height and weight and their BMI is instantly computed. Along with their BMI, a suggested weight loss goal is also calulated. </p>
+
+<p>The data is displayed in a table and the user&#39;s BMI is also plotted on a graph that shows BMI versus weight from a population taken from the National Health and Nutrition Examination Survey (NHANES).</p>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>How it Works</h3>
+  <p>The formula for BMI is: Weight/Height<sup>2</sup><br>
+Where weight is in kilograms and height is in meters. To &quot;Americanize&quot; the formula we convert Weight in pounds and and Height in inches to the appropriate units.<br>
+Here is an example for 6 foot tall(72 inches), 180 pound person:</p>
+
+<pre><code class="r">Weight = 225/2.2
+Height = 72/39.37
+BMI = Weight/(Height^2)
+round(BMI,2)
+</code></pre>
+
+<pre><code>## [1] 30.58
+</code></pre>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>Sample Results</h3>
+  <p>Here is a sample of the ouput from the application.</p>
+
+<!-- html table generated in R 3.1.0 by xtable 1.7-4 package -->
+
+<!-- Sun May 24 15:35:50 2015 -->
+
+<table border=1>
+<tr> <th>  </th> <th> Name </th> <th> Value </th>  </tr>
+  <tr> <td align="right"> 1 </td> <td> Your Weight (lbs) </td> <td> 225 </td> </tr>
+  <tr> <td align="right"> 2 </td> <td> Your Height(in) </td> <td> 72 </td> </tr>
+  <tr> <td align="right"> 3 </td> <td> Your BMI </td> <td> 30.58 </td> </tr>
+  <tr> <td align="right"> 4 </td> <td> Suggested Weight Loss </td> <td> 19 </td> </tr>
+   </table>
+
+</article>
+
+  </section>
+</body>
+  <!-- LOAD JAVASCRIPTS  -->
+	<script src='libraries/frameworks/html5slides/default/slides.js'></script>
+	<!-- LOAD HIGHLIGHTER JS FILES -->
+	<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+	 
+	</html>
